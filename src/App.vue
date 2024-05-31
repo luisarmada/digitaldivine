@@ -1,29 +1,36 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+  <body>
+    <div id="mainbody">
+      <RouterView />
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+      <div class="wrapper">
+        <nav>
+          <RouterLink to="/">Home</RouterLink>
+          <RouterLink to="/analysispersona">Analysis on Persona</RouterLink>
+          <RouterLink to="/analysishonkai">Analysis on Honkai</RouterLink>
+          <RouterLink to="/devproc">Development Process</RouterLink>
+          <RouterLink to="/suppinfo">Supplementary Info</RouterLink>
+        </nav>
+      </div>
     </div>
-  </header>
-
-  <RouterView />
+    <br>
+  </body>
+  
 </template>
 
 <style scoped>
-header {
+#mainbody {
+  position: absolute;
+  top: 0;
+  left: 0;
   line-height: 1.5;
-  max-height: 100vh;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 .logo {
@@ -32,10 +39,15 @@ header {
 }
 
 nav {
-  width: 100%;
-  font-size: 12px;
+  position:absolute;
+  width: auto;
+  font-size: 1em;
   text-align: center;
+  white-space: nowrap;
   margin-top: 2rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-bottom: 50px;
 }
 
 nav a.router-link-exact-active {
@@ -80,6 +92,7 @@ nav a:first-of-type {
 
     padding: 1rem 0;
     margin-top: 1rem;
+    
   }
 }
 </style>
