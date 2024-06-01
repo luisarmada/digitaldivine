@@ -7,15 +7,27 @@ import { RouterLink, RouterView } from 'vue-router'
     <div id="mainbody">
       <RouterView />
 
-      <div class="wrapper">
-        <nav>
-          <RouterLink to="/">Home</RouterLink>
-          <RouterLink to="/analysispersona">Analysis on Persona</RouterLink>
-          <RouterLink to="/analysishonkai">Analysis on Honkai</RouterLink>
-          <RouterLink to="/devproc">Development Process</RouterLink>
-          <RouterLink to="/suppinfo">Supplementary Info</RouterLink>
-        </nav>
-      </div>
+      <nav>
+        <img src="@/assets/decoratorlinev2.png" />
+        <div>
+          <div id="navleftside">
+            <RouterLink to="/">Home</RouterLink>
+            <RouterLink to="/">Glossary</RouterLink>
+            <RouterLink to="/devproc">Development</RouterLink>
+          </div>
+          <div id="navicon">
+
+          </div>
+          <div id="navrightside">
+            <RouterLink to="/analysispersona">Persona Analysis </RouterLink>
+            <RouterLink to="/analysishonkai">Honkai Analysis </RouterLink>
+            <RouterLink to="/suppinfo">Inspirations</RouterLink>
+          </div>
+        </div>
+        
+        <img src="@/assets/decoratorlinev2.png" />
+      </nav>
+
     </div>
     <br>
   </body>
@@ -39,8 +51,10 @@ import { RouterLink, RouterView } from 'vue-router'
 }
 
 nav {
+  display: flex;
+  flex-direction: column;
   position:absolute;
-  width: auto;
+  width: 100vw;
   font-size: 1em;
   text-align: center;
   white-space: nowrap;
@@ -48,10 +62,43 @@ nav {
   left: 50%;
   transform: translate(-50%, 0);
   margin-bottom: 50px;
+  top: 0;
+  gap: 5px;
 }
 
-nav a.router-link-exact-active {
-  color: var(--color-text);
+nav img{
+  height: 1.5vw;
+  width: auto;
+  object-fit: contain;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+  opacity: 0.6;
+}
+
+nav div{
+  display: flex;
+  justify-content: center;
+}
+
+
+#navleftside{
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1vw;
+  margin-right: 1vw;
+}
+
+#navrightside{
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1vw;
+  margin-left: 1vw;
+}
+
+#navicon{
+  width: 2vw;
 }
 
 nav a.router-link-exact-active:hover {
@@ -62,6 +109,8 @@ nav a {
   display: inline-block;
   padding: 0 1rem;
   border-left: 1px solid var(--color-border);
+  font-family: "Reddit Mono", monospace;
+  font-weight: 500;
 }
 
 nav a:first-of-type {
