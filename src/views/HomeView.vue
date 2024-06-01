@@ -149,6 +149,7 @@
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 500;
+    transform: translateY(10%);
     color:rgb(117, 198, 226);
     white-space: nowrap;
   }
@@ -255,8 +256,7 @@
     background-color: rgba(255, 255, 255, 0.3);
   }
   .highlightButton:active {
-    position:relative;
-    top:1px;
+    bottom: -1%;
   }
 
   p {

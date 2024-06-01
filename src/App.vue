@@ -16,7 +16,7 @@ import { RouterLink, RouterView } from 'vue-router'
             <RouterLink to="/devproc">Development</RouterLink>
           </div>
           <div id="navicon">
-
+            <img src="./assets/troricon.png" />
           </div>
           <div id="navrightside">
             <RouterLink to="/analysispersona">Persona Analysis </RouterLink>
@@ -66,13 +66,24 @@ nav {
   gap: 5px;
 }
 
-nav img{
+nav > img{
   height: 1.5vw;
   width: auto;
   object-fit: contain;
   filter: invert(100%);
   -webkit-filter: invert(100%);
   opacity: 0.6;
+}
+
+#navicon img {
+  height: 3.125vw;
+  width: auto;
+  object-fit: contain;
+  position: absolute;
+  transform: translate(0, -25%);
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  opacity: 0.75;
 }
 
 nav div{
