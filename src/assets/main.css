@@ -25,6 +25,64 @@ a {
   padding: 3px;
 }
 
+
+head {
+  background-color: #2b4261;
+  
+}
+
+main {
+  background-color: #2b4261;
+  margin-top: 8%;
+  margin-bottom: 5%;
+}
+
+p, ol, ul {
+  font-family: "Reddit Mono", monospace;
+  font-size: 1.2em;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 20px;
+  color: white;
+}
+
+b {
+  font-family: Arial Black, Helvetica, sans-serif;
+}
+
+h3{
+  text-align: center;
+  margin-top: 40px;
+  text-decoration: underline;
+  font-family: "Jersey 25", sans-serif;
+  font-size: 2em;
+  color: white;
+}
+
+h2{
+  text-align: center;
+  margin-top: 40px;
+  text-decoration: underline;
+  font-family: "Jersey 25", sans-serif;
+  font-size: 2.5em;
+  color: white;
+}
+
+h1{
+  text-align: center;
+  margin-top: 40px;
+  text-decoration: underline;
+  font-family: "Jersey 25", sans-serif;
+  font-size: 3.5em;
+  color: white;
+}
+
+#gamelink {
+  margin-left: 50%;
+  margin-top: 20px;
+  transform: translate(-50%, 0);
+}
+
 @media (hover: hover) {
   a:hover {
     background-color: hsla(160, 100%, 37%, 0.2);

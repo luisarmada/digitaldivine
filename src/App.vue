@@ -12,16 +12,16 @@ import { RouterLink, RouterView } from 'vue-router'
         <div>
           <div id="navleftside">
             <RouterLink to="/">Home</RouterLink>
-            <RouterLink to="/">Glossary</RouterLink>
+            <RouterLink to="/glossary">Glossary</RouterLink>
             <RouterLink to="/devproc">Development</RouterLink>
           </div>
           <div id="navicon">
             <img src="./assets/troricon.png" />
           </div>
           <div id="navrightside">
-            <RouterLink to="/analysispersona">Persona Analysis </RouterLink>
-            <RouterLink to="/analysishonkai">Honkai Analysis </RouterLink>
-            <RouterLink to="/suppinfo">Inspirations</RouterLink>
+            <RouterLink to="/gameanalysis">Game Analysis </RouterLink>
+            <RouterLink to="/analysishonkai">Gallery</RouterLink>
+            <RouterLink to="/suppinfo">Expansions</RouterLink>
           </div>
         </div>
         
@@ -43,6 +43,7 @@ import { RouterLink, RouterView } from 'vue-router'
   width: 100%;
   height: 100%;
   overflow-x: hidden;
+  background-color: #2b4261;
 }
 
 .logo {

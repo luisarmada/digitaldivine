@@ -136,38 +136,6 @@ Testing helped us understand how a player would experience this game, and change
   </main>
 </template>
 
-<style scoped>
+<style>
 
-  @font-face {
-    font-family: 'VCR OSD MONO';
-    src: url(@/assets/VCR_OSD_MONO.ttf);
-  }
-  p, ol {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.8em;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 20px;
-    color: black;
-  }
-
-  b {
-    font-family: Arial Black, Helvetica, sans-serif;
-  }
-
-  h1, h2, h3{
-    text-align: center;
-    margin-top: 40px;
-    text-decoration: underline;
-    font-family: Arial Black, Helvetica, sans-serif;
-    font-size: 2em;
-  }
-
-  #gamelink {
-    margin-left: 50%;
-    margin-top: 20px;
-    transform: translate(-50%, 0);
-  }
-
-  
 </style>
