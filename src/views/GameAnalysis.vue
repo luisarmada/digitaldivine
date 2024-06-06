@@ -9,7 +9,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   </head>
   <main>
-    <h1>Analysis of Persona 3: Portable</h1>
+
+    <div id="personadiv"> 
+      <img src="@/assets/persona3wallpaper.jpg" />
+    </div>
+    <div id="honkaidiv">
+      <img src="@/assets/honkaiwp.png" />
+    </div>
+    <!--<h1>Analysis of Persona 3: Portable</h1>
     <p>Persona 3 Portable is a spinoff of the Shin Megami Tensei series (SMT). This particular version of the game is a rerelease on the PlayStation Portable, with the original version (Persona 3) being available on PlayStation 2 in Japan in 2006, and North America in 2007. P3P was released in 2009 (JP) and 2010 (NA), and finally in Europe in 2011. It was ported once more to modern consoles in 2023. The SMT series is known for its disturbing tone and the use of demonic and mythological references and settings, and the Persona series has similar references. In P3P, the player becomes affiliated with the Specialised Extracurricular Execution Squad, a group of fellow students who are investigating the Dark Hour. During the Dark Hour, a tower known as Tartarus spawns which contains monsters called Shadows. SEES call upon a physical manifestation of their psyche called a Persona through firing a gun-like object called an Evoker at their head. P3P has two kinds of gameplay that the player alternates between at Day and Night - simulation and role-playing games. Both kinds of gameplay interact with one another and the player must find a balance between the two to ensure a smooth playing experience.</p>
 
 <p>To understand what will be discussed, spoilers of the game’s plot must be shared. Throughout the game, SEES works to destroy 12 greater Shadows that were born out of an experiment, since they were told that their destruction would mean that Tartarus and the Dark Hour would cease to exist. However, destroying the greater Shadows actually resulted in parts of Nyx being free, a being who would bring the end of the world if fully restored. She is the creator of Shadows and was drawn to Earth by the Appraiser, or Death. </p>
@@ -126,10 +133,42 @@
 <p>There is clear partiality to certain Paths such as the Preservation, the Hunt and the Harmony, as portrayals of their Pathstriders show them in favourable living conditions (the IPC, Xianzhou Luofu, and Penacony Dreamscape). Other Paths such as the Order, the Propagation and the Beauty either lack Pathstriders entirely, or their traditions are kept to few practitioners.</p>
 
 <p>The imbalance of conditions between each Path and their Pathstriders is clear evidence for the hierarchy of religions that is perpetuated by the World Religions Paradigm. While this makes for richer lore for the storyworld, the inequality between the Paths perpetuates the paradigm and should be addressed in the future.</p>
-
+-->
   </main>
 </template>
 
 <style scoped>
+
+#personadiv {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#personadiv img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right;
+}
+
+#honkaidiv {
+  position: absolute;
+  left: 50vw;
+  top: 0;
+  width: 50vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#honkaidiv img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 80% 50%;
+}
 
 </style>
